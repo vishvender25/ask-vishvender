@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <style>
+        body{
+            background-color: #303134;
+            color: #BDC1C6;
+        }
+     .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+     }
+     #user-input{
+        margin: 1rem 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 23px;
+        width: 40vw;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: #e8eaed;
+
+     }
+     #search{
+        border-radius: 23px;
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: #e8eaed;
+     }
+
+     #results{
+        /* background-color: blue; */
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        /* height: 80vh; */
+        width: 70vw;
+        margin-left: 15vw;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        align-items: center;
+     }
+     h1{
+        text-align: center;
+        color: #e8eaed;
+     }
+     a{
+        text-decoration: none;
+        color: #99C3FF;
+     }
+    </style>
+</head>
+<body>
+    <h1 >Ask Vishvender</h1>
+    <div class="top">
+    <input type="text" id="user-input" placeholder="Search here ">
+    <button id="search">Search</button>
+    </div>
+    <div class="search-results" id="results">
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
